@@ -1,0 +1,6 @@
+#!/bin/bash
+  
+for i in female_1, female_2, female_3, female_4, female_4 female_6 female_7; do
+  sleep 2
+  qsub -v PBS_ARRAY_INDEX=$i main_array.pbs
+done
